@@ -1,0 +1,110 @@
+#services {
+  position: relative;
+  padding: 120px 0px 90px 0px;
+  background: $color-primary;
+  background: -moz-linear-gradient(
+    -45deg,
+    $color-primary 0%,
+    $color-second 0%,
+    $color-primary 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, $color-primary),
+    color-stop(0%, $color-second),
+    color-stop(100%, $color-primary)
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    $color-primary 0%,
+    $color-second 0%,
+    $color-primary 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    $color-primary 0%,
+    $color-second 0%,
+    $color-primary 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    $color-primary 0%,
+    $color-second 0%,
+    $color-primary 100%
+  );
+  background: linear-gradient(
+    135deg,
+    $color-primary 0%,
+    $color-second 0%,
+    $color-primary 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
+}
+
+.service-item {
+  cursor: pointer;
+  display: block;
+  background: $white;
+  box-shadow: 0 2px 48px 0 $black;
+  padding: 40px 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+
+  .icon {
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    background: $color-primary;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      max-width: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .service-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: $black;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 13px;
+    color: $color-second;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .service-item {
+    margin: 0px 30px !important;
+  }
+}

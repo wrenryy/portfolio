@@ -1,0 +1,13 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}

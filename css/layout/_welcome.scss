@@ -1,0 +1,143 @@
+#welcome {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/portfolio/girl-landscape.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 105vh;
+  margin-top: -10vh;
+
+  .header-text {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-60%);
+    text-align: left;
+    width: 100%;
+
+    .left-text {
+      align-self: center;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 80px;
+      letter-spacing: 1.4px;
+      margin-bottom: 30px;
+      color: $white;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 17px;
+      color: $white;
+      line-height: 30px;
+      letter-spacing: 0.25px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome-area .header-text {
+    top: 55% !important;
+    transform: perspective(1px) translateY(-60%) !important;
+
+    h1 {
+      font-size: 36px;
+      line-height: 50px;
+      color: $white;
+      margin-bottom: 15px;
+
+      span {
+        color: $white;
+      }
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .welcome-area .header-text {
+    top: 55% !important;
+    transform: perspective(1px) translateY(-60%) !important;
+
+    h1 {
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .welcome-area {
+    margin-bottom: 100px;
+
+    .header-text {
+      top: 55% !important;
+      transform: perspective(1px) translateY(-50%) !important;
+      text-align: center;
+
+      .buttons {
+        display: none;
+      }
+
+      h1 {
+        font-weight: 600;
+        font-size: 24px !important;
+        line-height: 30px !important;
+        margin-bottom: 20px !important;
+
+        span {
+          color: $white;
+        }
+      }
+
+      p {
+        text-align: center;
+        color: $white;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 40px;
+      }
+
+      img {
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.project-header {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(245, 246, 252, 0.52)),
+      to(rgba(46, 41, 78, 1))
+    ),
+    url("../images/portfolio/witch-girl.png") !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100vh;
+  margin-top: -10vh;
+}

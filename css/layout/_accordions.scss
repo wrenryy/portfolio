@@ -1,0 +1,93 @@
+#frequently-question {
+  padding: 120px 0px;
+
+  .section-heading p {
+    margin-bottom: 80px;
+  }
+
+  .left-text {
+    align-self: center !important;
+
+    h5 {
+      font-size: 26px;
+      font-weight: 700;
+      color: $black;
+      line-height: 40px;
+      margin-bottom: 25px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+    }
+
+    span {
+      font-size: 16px;
+      color: $color-primary;
+      margin-bottom: 50px;
+      display: block;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  #frequently-question .left-text {
+    margin-bottom: 60px;
+  }
+}
+
+.accordions {
+  background-color: $white;
+}
+
+.accordion-head {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+  border-bottom: 1px solid $white;
+
+  .icon {
+    float: right;
+    transition: transform 200ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-head {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.accordion-head.is-open {
+  color: $color-second;
+  border-bottom: none;
+
+  .icon {
+    transform: rotate(45deg);
+  }
+}
+
+.accordion-body {
+  overflow: hidden;
+  height: 0;
+  transition: height 300ms ease-in-out;
+  border-bottom: 1px solid $white;
+}
+
+.accordion-body > .content {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.accordion-head:hover {
+  cursor: pointer;
+}

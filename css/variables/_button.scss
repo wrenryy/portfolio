@@ -1,0 +1,67 @@
+
+a.main-button-slider {
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: $color-second;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  a.main-button-slider:hover {
+    background-color: $color-primary;
+  }
+  
+  a.main-button {
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: $black;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  a.main-button:hover {
+    background-color: $color-primary;
+  }
+  
+  button.main-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: $color-second;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button.main-button:hover {
+    background-color: $color-primary;
+  }
+  
+  .service-item:hover .icon,
+.service-item:hover a.main-button {
+  background-color: $color-primary;
+}
+
+.service-item a.main-button {
+    margin-top: 30px;
+    display: inline-block;
+  }

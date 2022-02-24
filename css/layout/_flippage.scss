@@ -1,0 +1,36 @@
+.flip-front {
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.col-4:hover,
+.col:hover {
+  .flip-front {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+
+  .flip-back {
+    opacity: 1;
+    transition: 0.8s;
+  }
+}
+
+@media (max-width: 500px) {
+  .flip-back h6 {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .flip-back h6 {
+    font-size: 0.6rem !important;
+  }
+}
